@@ -4,19 +4,18 @@ public class Main {
 
 
     public static void main(String[] args) {
-        int age = 26;
-        System.out.println("Mon âge est : " + age + " ans");
-        System.out.println(somme(2,9));
+        String studentName = "John Doe";
+        int studentID = 15;
+        int studentAge = 23;
+        float studentFee = 75.25f;
+        char studentGrade = 'B';
 
+        // Print variables
+        System.out.println("Student name: " + studentName);
+        System.out.println("Student id: " + studentID);
+        System.out.println("Student age: " + studentAge);
+        System.out.println("Student fee: " + studentFee);
+        System.out.println("Student grade: " + studentGrade);
     }
 
-    /**
-     *
-     * @param nbre1 firt number that we want used to make sum
-     * @param nbre2 second number that we want used to make sum
-     * @return a double, sum of number 1 and number 2
-     */
-    static double somme(double nbre1, double nbre2){
-        return nbre1 + nbre2;
-    }
 }
