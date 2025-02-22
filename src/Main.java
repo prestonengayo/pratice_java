@@ -7,29 +7,37 @@ public class Main {
 
 
     public static void main(String[] args) {
-        //Type casting
+        //String Exercise
+        String firstname;
+        String lastname;
 
-        //integer to double
-        int age = 25;
-        double age1 = age;
-        System.out.println(age1);
+        String firstPart = "";
+        String secondPart = "";
 
-        //double to integer
-        double somme = 625.20;
-        int somme1 = (int)somme;
-        System.out.println(somme1);
+        Scanner keyboard = new Scanner(System.in);
 
-        //byte to int
-        byte taille = 125;
-        int taille1 = taille;
-        taille1 = taille1 + 500;
-        System.out.println(taille1);
+        // recuperation du nom et prenom de l'utilisateur
+        System.out.println("Entrer votre prenom : ");
+        firstname = keyboard.nextLine();
+        System.out.println("Entrer votre nom de famille : ");
+        lastname = keyboard.nextLine();
 
-        //int to byte
-        int ageAdulte = 200;
-        byte ageAdulte1 = (byte) ageAdulte;
-        System.out.print(ageAdulte1);
+        // mettre le nom en majiscule
+        lastname = lastname.toUpperCase();
 
-    }
+        // recuperation du premier caractere du prenom et transformation de ce caractère en string
+        firstPart = String.valueOf(firstname.charAt(0));
+        firstPart = firstPart.toUpperCase();
+
+        //recupération du reste de prenom et le mettre en miniscule
+        secondPart = firstname.substring(1).toLowerCase();
+
+        //concatener les deux parties du prénom
+        firstname = firstPart.concat(secondPart);
+
+        //affichage
+        System.out.println("Bienvenue "+ firstname + " " + lastname);
+
+   }
 
 }
