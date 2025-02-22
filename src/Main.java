@@ -5,26 +5,16 @@ public class Main {
 
 
     public static void main(String[] args) {
-        //declaration des variable largeur, longeur et surface
-        float lenght, width, area;
+        //Data type
 
-        //création d'un objet scanner pour recuperer la saisie de l'utilisateur
-        Scanner keybaord = new Scanner(System.in);
+        byte age = 100;
+        byte age1 = 200;
 
-        System.out.println("Entrer la largeur du rectangle");
 
-        //recuperation de la largeur
-        width = keybaord.nextFloat();
+        short balanceCompte1 = 23500;
+        short balanceCompte = 40000;
 
-        System.out.println("Entrer la longeur du rectangle");
-
-        //recuperation de la longeur
-        lenght = keybaord.nextFloat();
-
-        //calcul de la surface
-        area = lenght * width;
-
-        System.out.println("La surface du rectangle est "+ area);
+        int futurSalaire = 2000000000;
     }
 
 }
