@@ -5,38 +5,28 @@ public class Main {
 
 
     public static void main(String[] args) {
-        // Boucle
-        String reponse;
+        // tableau
 
+
+        String[] jourSemaine = new String[7];
 
         Scanner clavier = new Scanner(System.in);
-
-/*
-        do {
-            System.out.println("Voulez vous continuer à jouer oui ou non ? ");
-            reponse = clavier.nextLine().toLowerCase();
+        String[] mois = {"Janvier", "fevrier", "Mars", "Avril"};
 
 
-            if(reponse.equals("oui")){
-                System.out.println("vous avez decidé de continuer!");
-            }else if(reponse.equals("non")) {
-                System.out.println("vous avez decidé de ne pas continuer!");
-                break;
-            }else{
-                System.out.println("Veuillez taper oui ou non");
-            }
-
-        }while (reponse.equals("oui") || reponse.equals("non"));
-*/
-
-
-        for (int i = 0 ; i <= 10; i++ ){
-            if( i == 4){
-                break;
-            }
-            System.out.println("nous sommes à la position : "+ (i));
-
+        System.out.println(jourSemaine.length);
+        for(int i = 0; i < jourSemaine.length ; i++){
+            System.out.println("Entrer le jour n°"+ (i+1));
+            jourSemaine[i] = clavier.nextLine();
         }
+
+
+        for (String jour : jourSemaine){
+            System.out.println(jour);
+        }
+
+
+
    }
 
 }
