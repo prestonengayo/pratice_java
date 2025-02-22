@@ -6,15 +6,21 @@ public class Main {
 
     public static void main(String[] args) {
         //Data type
+        final int PRIX_UNITAIRE = 125;
+        final  String DEVISE = "CFA";
+        int nbreArticle;
+        double total;
 
-        byte age = 100;
-        byte age1 = 200;
+        Scanner clavier = new Scanner(System.in);
+
+        System.out.println("Combien d'oeufs voulez vous prendre ?");
+        nbreArticle = clavier.nextInt();
+
+        total = nbreArticle * PRIX_UNITAIRE;
+
+        System.out.println("Vous devez payé : "+ total + " "+DEVISE);
 
 
-        short balanceCompte1 = 23500;
-        short balanceCompte = 40000;
-
-        int futurSalaire = 2000000000;
     }
 
 }
