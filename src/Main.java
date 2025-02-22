@@ -11,7 +11,14 @@ public class Main {
         int nombreVoyelle = 0;
         String voyelletrouve = "";
 
+        String[] jourSemaine = {"lundi", "mardi", "mercredi", "jeudi", "vedredi", "samedi"};
+
         Scanner clavier = new Scanner(System.in);
+
+
+        for(String jour : jourSemaine){
+            System.out.println(jour);
+        }
 
         System.out.println("entrer votre prénom svp : ");
         prenom = clavier.nextLine().toLowerCase();
@@ -26,6 +33,8 @@ public class Main {
                 }
             }
         }
+
+
 
         System.out.println("Votre prenom contient : "+ nombreVoyelle + " voyelle"+ ((nombreVoyelle > 1) ? "s" : ""));
         System.out.println("Les voyelles trouvées sont : "+ voyelletrouve);
