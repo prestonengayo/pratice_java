@@ -6,39 +6,37 @@ public class Main {
 
     public static void main(String[] args) {
         // Boucle
-        String prenom;
-        final String VOYELLE = "aeuioy";
-        int nombreVoyelle = 0;
-        String voyelletrouve = "";
+        String reponse;
 
-        String[] jourSemaine = {"lundi", "mardi", "mercredi", "jeudi", "vedredi", "samedi"};
 
         Scanner clavier = new Scanner(System.in);
 
+/*
+        do {
+            System.out.println("Voulez vous continuer à jouer oui ou non ? ");
+            reponse = clavier.nextLine().toLowerCase();
 
-        for(String jour : jourSemaine){
-            System.out.println(jour);
-        }
 
-        System.out.println("entrer votre prénom svp : ");
-        prenom = clavier.nextLine().toLowerCase();
-
-        for (int index = 0; index < prenom.length(); index++){
-            char caractere = prenom.charAt(index);
-
-            for (int index1 = 0; index1 < VOYELLE.length(); index1 ++){
-                if (caractere == VOYELLE.charAt(index1)){
-                   voyelletrouve = voyelletrouve.concat(String.valueOf(caractere));
-                    nombreVoyelle++;
-                }
+            if(reponse.equals("oui")){
+                System.out.println("vous avez decidé de continuer!");
+            }else if(reponse.equals("non")) {
+                System.out.println("vous avez decidé de ne pas continuer!");
+                break;
+            }else{
+                System.out.println("Veuillez taper oui ou non");
             }
+
+        }while (reponse.equals("oui") || reponse.equals("non"));
+*/
+
+
+        for (int i = 0 ; i <= 10; i++ ){
+            if( i == 4){
+                break;
+            }
+            System.out.println("nous sommes à la position : "+ (i));
+
         }
-
-
-
-        System.out.println("Votre prenom contient : "+ nombreVoyelle + " voyelle"+ ((nombreVoyelle > 1) ? "s" : ""));
-        System.out.println("Les voyelles trouvées sont : "+ voyelletrouve);
-
    }
 
 }
