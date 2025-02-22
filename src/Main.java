@@ -1,21 +1,30 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+
+
 public class Main {
 
 
     public static void main(String[] args) {
-        String studentName = "John Doe";
-        int studentID = 15;
-        int studentAge = 23;
-        float studentFee = 75.25f;
-        char studentGrade = 'B';
+        //declaration des variable largeur, longeur et surface
+        float lenght, width, area;
 
-        // Print variables
-        System.out.println("Student name: " + studentName);
-        System.out.println("Student id: " + studentID);
-        System.out.println("Student age: " + studentAge);
-        System.out.println("Student fee: " + studentFee);
-        System.out.println("Student grade: " + studentGrade);
+        //création d'un objet scanner pour recuperer la saisie de l'utilisateur
+        Scanner keybaord = new Scanner(System.in);
+
+        System.out.println("Entrer la largeur du rectangle");
+
+        //recuperation de la largeur
+        width = keybaord.nextFloat();
+
+        System.out.println("Entrer la longeur du rectangle");
+
+        //recuperation de la longeur
+        lenght = keybaord.nextFloat();
+
+        //calcul de la surface
+        area = lenght * width;
+
+        System.out.println("La surface du rectangle est "+ area);
     }
 
 }
