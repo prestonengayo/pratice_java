@@ -13,14 +13,13 @@ public class Main {
         System.out.println("veuillez entrer votre âge :");
         age = clavier.nextInt();
 
-        if(age < 18){
-            System.out.println("Vous êtes encore mineur");
-        }else  if(age > 18 ){
-            System.out.println("Vous êtes majeur");
-        }else{
-            System.out.println("Vous venez juste de devenir majeur !");
-        }
 
+        if(age <= 0){
+            System.out.println("Veuillez entrer un âge valide");
+        }else{
+            System.out.print("vous avez " + age + " an");
+            System.out.println((age != 1) ? "s" : "");
+        }
 
    }
 
