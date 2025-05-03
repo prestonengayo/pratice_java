@@ -2,7 +2,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
-
+    static int age = 26;
 
     public static void main(String[] args) {
 
@@ -10,8 +10,10 @@ public class Main {
         System.out.println(sum(2,3));
         System.out.println(sum(2.5, 3.5));
 
-    }
+        System.out.println(age);
 
+    }
+    
     static void say_hello(){
         System.out.println("Hello i'm in a function !");
     }
